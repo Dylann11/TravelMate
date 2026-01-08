@@ -473,6 +473,27 @@ section {
     transform: scale(1.02);
 }
 
+.mrt-map-pdf {
+    width: 100%;
+    height: 700px;
+    border: none;
+    border-radius: var(--radius-md);
+    display: block;
+    background: var(--gray-lighter);
+}
+
+@media (max-width: 768px) {
+    .mrt-map-pdf {
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mrt-map-pdf {
+        height: 400px;
+    }
+}
+
 .map-info {
     margin-top: var(--spacing-sm);
     padding: var(--spacing-sm);
