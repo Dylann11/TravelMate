@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TravelMate - Your guide to navigating Singapore's public transport system. MRT/LRT maps, bus guides, and navigation tips for foreign exchange students at Republic Polytechnic.">
+    <meta name="keywords" content="Singapore MRT, LRT, public transport, Republic Polytechnic, exchange students, navigation">
+    <meta name="author" content="TravelMate">
+    <title>TravelMate - Navigate Singapore with Confidence</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="css/styles.css" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-train" aria-hidden="true"></i>
+                        <span>TravelMate</span>
+                    </a>
+                    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#mrt-map" class="nav-link">MRT/LRT Map</a></li>
+                    <li><a href="#bus-guide" class="nav-link">Bus Guide</a></li>
+                    <li><a href="#tips" class="nav-link">Travel Tips</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+        <section id="home" class="hero" role="banner">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to <span class="highlight">TravelMate</span></h1>
+                    <p class="hero-subtitle">Your ultimate guide to navigating Singapore's public transport system</p>
+                    <p class="hero-description">Designed for foreign exchange students at Republic Polytechnic to travel confidently and independently.</p>
+                    <div class="hero-actions">
+                        <a href="#mrt-map" class="btn btn-primary">Explore MRT Map</a>
+                        <a href="#chatbot" class="btn btn-secondary">Ask AI Assistant</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Start Guide -->
+        <section id="quick-start" class="quick-start">
+            <div class="container">
+                <h2 class="section-title">Quick Start Guide</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-subway" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="card-title">MRT/LRT System</h3>
+                        <p class="card-description">View interactive maps, understand different lines, and find the fastest routes to your destination.</p>
+                        <a href="#mrt-map" class="card-link">View Map <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-bus" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="card-title">Bus Services</h3>
+                        <p class="card-description">Find bus routes, learn how to use bus stops, and discover convenient bus connections.</p>
+                        <a href="#bus-guide" class="card-link">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="card-title">Travel Tips</h3>
+                        <p class="card-description">Essential tips for tickets, peak hours, etiquette, and making your journey smooth.</p>
+                        <a href="#tips" class="card-link">Get Tips <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-robot" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="card-title">AI Chatbot</h3>
+                        <p class="card-description">Ask our AI assistant any questions about Singapore's transport system instantly.</p>
+                        <a href="#chatbot" class="card-link">Chat Now <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- MRT/LRT Map Section -->
+        <section id="mrt-map" class="mrt-section">
+            <div class="container">
+                <h2 class="section-title">MRT/LRT Interactive Map</h2>
+                <p class="section-subtitle">Explore Singapore's comprehensive rail network</p>
+                
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map" aria-hidden="true"></i>
+                        <p>Interactive MRT/LRT Map</p>
+                        <small>Click on stations for details, routes, and connections</small>
+                    </div>
+                </div>
+                
+                <div class="map-legend">
+                    <h3>Rail Lines</h3>
+                    <ul class="legend-list">
+                        <li><span class="legend-color" style="background: #E02D1D;"></span> North South Line</li>
+                        <li><span class="legend-color" style="background: #00883B;"></span> East West Line</li>
+                        <li><span class="legend-color" style="background: #8E45A9;"></span> North East Line</li>
+                        <li><span class="legend-color" style="background: #FA9F2E;"></span> Circle Line</li>
+                        <li><span class="legend-color" style="background: #0088D3;"></span> Downtown Line</li>
+                        <li><span class="legend-color" style="background: #8D6C43;"></span> Thomson-East Coast Line</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bus Guide Section -->
+        <section id="bus-guide" class="bus-section">
+            <div class="container">
+                <h2 class="section-title">Bus Guide for Beginners</h2>
+                
+                <div class="guide-content">
+                    <div class="guide-item">
+                        <div class="guide-number">1</div>
+                        <div class="guide-text">
+                            <h3>Finding Your Bus</h3>
+                            <p>Check bus stop codes and use apps like Singapore Bus Guide or Google Maps to find which buses go to your destination.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="guide-item">
+                        <div class="guide-number">2</div>
+                        <div class="guide-text">
+                            <h3>Boarding the Bus</h3>
+                            <p>Board from the front, tap your card on entry, and remember to tap out when you exit to avoid overcharging.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="guide-item">
+                        <div class="guide-number">3</div>
+                        <div class="guide-text">
+                            <h3>Getting Around Republic Poly</h3>
+                            <p>Common buses to RP: 856, 859, 969. Nearest MRT: Woodlands (NS9) with connecting buses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips Section -->
+        <section id="tips" class="tips-section">
+            <div class="container">
+                <h2 class="section-title">Essential Travel Tips</h2>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fas fa-credit-card" aria-hidden="true"></i>
+                        <h3>Payment Methods</h3>
+                        <p>Get an EZ-Link card or SimplyGo card. You can also use contactless credit/debit cards for seamless travel.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <h3>Peak Hours</h3>
+                        <p>Avoid 7-9 AM and 5-7 PM on weekdays when trains and buses are crowded. Plan your journey accordingly.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <i class="fas fa-hand-paper" aria-hidden="true"></i>
+                        <h3>Travel Etiquette</h3>
+                        <p>Stand on the left of escalators, give up seats for elderly/pregnant passengers, and avoid eating/drinking.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        <h3>Useful Apps</h3>
+                        <p>Download MyTransport.SG, Google Maps, and Grab for real-time info and alternative transport options.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                        <h3>Emergency Info</h3>
+                        <p>Emergency button on trains, helplines on station platforms. Keep important numbers saved on your phone.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+                        <h3>Save Money</h3>
+                        <p>Off-peak travel is cheaper. Monthly passes available for frequent travelers. Top up cards at 7-Eleven stores.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Chatbot Section -->
+        <section id="chatbot" class="chatbot-section">
+            <div class="container">
+                <h2 class="section-title">Ask TravelMate AI</h2>
+                <p class="section-subtitle">Get instant answers to your transport questions</p>
+                
+                <div class="chatbot-container">
+                    <div class="chatbot-placeholder">
+                        <i class="fas fa-comments" aria-hidden="true"></i>
+                        <p>Flowise AI Chatbot Integration</p>
+                        <small>This will be integrated with your Flowise chatbot</small>
+                    </div>
+                    
+                    <!-- Placeholder for Flowise chatbot iframe/embed -->
+                    <div id="flowise-chatbot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>How do I get from Changi Airport to Republic Polytechnic?</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Take the MRT from Changi Airport (EW/CG line) towards Joo Koon, change at Tanah Merah to Joo Koon direction, then at Jurong East switch to North South Line towards Woodlands. Get off at Woodlands station and take bus 856, 859, or 969 to Republic Polytechnic.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>What's the best card for public transport?</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>EZ-Link card is recommended for students. It costs S$12 (including S$7 stored value) and can be purchased at MRT stations, 7-Eleven stores, and Cheers outlets. You can also use contactless credit/debit cards with SimplyGo.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Are there student discounts for public transport?</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Student concession cards are available for full-time students at approved institutions. Check with Republic Polytechnic's student services for eligibility and application process.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>What if I forget to tap out?</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>You'll be charged the maximum fare from your entry point. To get a refund, visit the TransitLink Ticket Office at major MRT stations within 14 days with your card and explain the situation.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Is public transport safe at night?</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Yes, Singapore's public transport is generally very safe at all hours. Trains run until midnight, and night buses operate after that. Stay in well-lit areas and remain aware of your surroundings.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Need More Help?</h2>
+                <p class="section-subtitle">We're here to assist you</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <h3>Hotlines</h3>
+                        <p><strong>SMRT:</strong> 1800 336 8900</p>
+                        <p><strong>SBS Transit:</strong> 1800 287 2727</p>
+                        <p><strong>RP Student Services:</strong> 6510 3000</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-globe" aria-hidden="true"></i>
+                        <h3>Useful Websites</h3>
+                        <p><a href="https://www.lta.gov.sg" target="_blank" rel="noopener noreferrer">Land Transport Authority</a></p>
+                        <p><a href="https://www.transitlink.com.sg" target="_blank" rel="noopener noreferrer">TransitLink</a></p>
+                        <p><a href="https://www.mytransport.sg" target="_blank" rel="noopener noreferrer">MyTransport.SG</a></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <h3>Feedback</h3>
+                        <p>Have suggestions to improve TravelMate?</p>
+                        <a href="mailto:feedback@travelmate.sg" class="btn btn-outline">Send Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TravelMate</h3>
+                    <p>Making public transport navigation easier for foreign exchange students in Singapore.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#mrt-map">MRT Map</a></li>
+                        <li><a href="#bus-guide">Bus Guide</a></li>
+                        <li><a href="#tips">Travel Tips</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://www.lta.gov.sg" target="_blank" rel="noopener noreferrer">LTA Website</a></li>
+                        <li><a href="https://www.transitlink.com.sg" target="_blank" rel="noopener noreferrer">TransitLink</a></li>
+                        <li><a href="https://www.rp.edu.sg" target="_blank" rel="noopener noreferrer">Republic Polytechnic</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 TravelMate. Created for Republic Polytechnic exchange students. Not affiliated with LTA or SMRT.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
