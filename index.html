@@ -113,11 +113,26 @@
                 <p class="section-subtitle">Explore Singapore's comprehensive rail network</p>
                 
                 <div class="map-container">
-                    <div class="map-placeholder">
-                        <i class="fas fa-map" aria-hidden="true"></i>
-                        <p>Interactive MRT/LRT Map</p>
-                        <small>Click on stations for details, routes, and connections</small>
+                    <div class="map-controls">
+                        <button id="zoom-in" class="map-btn" aria-label="Zoom in">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                        <button id="zoom-out" class="map-btn" aria-label="Zoom out">
+                            <i class="fas fa-search-minus"></i>
+                        </button>
+                        <button id="reset-zoom" class="map-btn" aria-label="Reset zoom">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                        <button id="fullscreen" class="map-btn" aria-label="Toggle fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </button>
                     </div>
+                    <div class="map-wrapper" id="map-wrapper">
+                        <object id="mrt-map-svg" data="Resource/Singapore_MRT_and_LRT_System_Map.svg" type="image/svg+xml" aria-label="Interactive Singapore MRT and LRT System Map">
+                            <img src="Resource/Singapore_MRT_and_LRT_System_Map.svg" alt="Singapore MRT and LRT System Map" />
+                        </object>
+                    </div>
+                    <div id="station-tooltip" class="station-tooltip" role="tooltip" aria-live="polite"></div>
                 </div>
                 
                 <div class="map-legend">
