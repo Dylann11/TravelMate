@@ -618,32 +618,30 @@ section {
 .chatbot-container {
     max-width: 900px;
     margin: 0 auto;
-}
-
-.chatbot-placeholder {
     background: var(--white);
-    border: 2px solid var(--gray-light);
     border-radius: var(--radius-lg);
-    padding: var(--spacing-xl);
-    text-align: center;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
 }
 
-.chatbot-placeholder i {
-    font-size: 4rem;
-    color: var(--secondary-color);
-    margin-bottom: var(--spacing-sm);
+.botpress-chatbot {
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: block;
+    background: var(--white);
 }
 
-.chatbot-placeholder p {
-    font-size: var(--font-size-xl);
-    font-weight: 600;
-    color: var(--gray-dark);
-    margin-bottom: var(--spacing-xs);
+@media (max-width: 768px) {
+    .botpress-chatbot {
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .botpress-chatbot {
+        height: 450px;
+    }
 }
 
 /* ============================================

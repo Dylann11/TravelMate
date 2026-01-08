@@ -362,31 +362,24 @@ class MRTMapInteraction {
 
 class ChatbotIntegration {
     constructor() {
-        this.chatbotContainer = document.getElementById('flowise-chatbot');
+        this.chatbotIframe = document.querySelector('.botpress-chatbot');
         this.init();
     }
     
     init() {
-        if (!this.chatbotContainer) return;
+        if (!this.chatbotIframe) return;
         
-        // Placeholder for Flowise chatbot integration
-        // Replace with actual Flowise embed code
-        console.log('Chatbot integration ready');
+        console.log('Botpress chatbot integrated successfully');
         
-        // Example: Load chatbot script dynamically
-        // this.loadChatbot();
-    }
-    
-    loadChatbot() {
-        // Example implementation - replace with actual Flowise integration
-        const script = document.createElement('script');
-        script.src = 'YOUR_FLOWISE_CHATBOT_URL';
-        script.async = true;
-        script.onload = () => {
-            console.log('Chatbot loaded successfully');
-            // Initialize chatbot here
-        };
-        document.body.appendChild(script);
+        // Add load event listener to track when chatbot is ready
+        this.chatbotIframe.addEventListener('load', () => {
+            console.log('Botpress chatbot loaded and ready');
+        });
+        
+        // Add error handling
+        this.chatbotIframe.addEventListener('error', () => {
+            console.error('Failed to load Botpress chatbot');
+        });
     }
 }
 
