@@ -480,6 +480,31 @@ section {
     border-radius: var(--radius-md);
     display: block;
     background: var(--gray-lighter);
+    pointer-events: none;
+}
+
+.pdf-fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    background: var(--gray-lighter);
+    border-radius: var(--radius-md);
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+.pdf-fallback i {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.pdf-fallback p {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--gray-dark);
+    margin-bottom: var(--spacing-md);
 }
 
 @media (max-width: 768px) {
