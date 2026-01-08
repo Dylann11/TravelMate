@@ -462,6 +462,7 @@ section {
 .mrt-map-image {
     width: 100%;
     height: auto;
+    min-height: 600px;
     border-radius: var(--radius-md);
     cursor: pointer;
     transition: transform var(--transition-base);
@@ -473,49 +474,15 @@ section {
     transform: scale(1.02);
 }
 
-.mrt-map-pdf {
-    width: 100%;
-    height: 700px;
-    border: none;
-    border-radius: var(--radius-md);
-    display: block;
-    background: var(--gray-lighter);
-    pointer-events: none;
-}
-
-.pdf-fallback {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 500px;
-    background: var(--gray-lighter);
-    border-radius: var(--radius-md);
-    text-align: center;
-    padding: var(--spacing-xl);
-}
-
-.pdf-fallback i {
-    color: var(--primary-color);
-    margin-bottom: var(--spacing-sm);
-}
-
-.pdf-fallback p {
-    font-size: var(--font-size-xl);
-    font-weight: 600;
-    color: var(--gray-dark);
-    margin-bottom: var(--spacing-md);
-}
-
 @media (max-width: 768px) {
-    .mrt-map-pdf {
-        height: 500px;
+    .mrt-map-image {
+        min-height: 400px;
     }
 }
 
 @media (max-width: 480px) {
-    .mrt-map-pdf {
-        height: 400px;
+    .mrt-map-image {
+        min-height: 300px;
     }
 }
 
