@@ -69,6 +69,12 @@ class Navigation {
     }
     
     init() {
+        // Prevent automatic scrolling on page load
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+        
         // Mobile menu toggle
         if (this.navToggle) {
             this.navToggle.addEventListener('click', () => this.toggleMenu());
@@ -363,23 +369,52 @@ class MRTMapInteraction {
 class ChatbotIntegration {
     constructor() {
         this.chatbotIframe = document.querySelector('.botpress-chatbot');
+        this.chatbotSection = document.querySelector('.chatbot-section');
+        this.isLoaded = false;
         this.init();
     }
     
     init() {
-        if (!this.chatbotIframe) return;
+        if (!this.chatbotIframe || !this.chatbotSection) return;
         
-        console.log('Botpress chatbot integrated successfully');
-        
-        // Add load event listener to track when chatbot is ready
-        this.chatbotIframe.addEventListener('load', () => {
-            console.log('Botpress chatbot loaded and ready');
+        // Use Intersection Observer to load iframe when section is near viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !this.isLoaded) {
+                    this.loadChatbot();
+                }
+            });
+        }, {
+            rootMargin: '100px' // Load when 100px away from viewport
         });
         
-        // Add error handling
-        this.chatbotIframe.addEventListener('error', () => {
-            console.error('Failed to load Botpress chatbot');
-        });
+        observer.observe(this.chatbotSection);
+    }
+    
+    loadChatbot() {
+        // Get the current scroll position
+        const scrollPosition = window.scrollY;
+        
+        // Load the iframe by setting src from data-src
+        const dataSrc = this.chatbotIframe.getAttribute('data-src');
+        if (dataSrc) {
+            this.chatbotIframe.src = dataSrc;
+            this.isLoaded = true;
+            
+            console.log('Botpress chatbot loading...');
+            
+            // Prevent auto-scroll when iframe loads and focuses
+            this.chatbotIframe.addEventListener('load', () => {
+                // Restore scroll position if it changed
+                window.scrollTo(0, scrollPosition);
+                console.log('Botpress chatbot loaded and ready');
+            });
+            
+            // Add error handling
+            this.chatbotIframe.addEventListener('error', () => {
+                console.error('Failed to load Botpress chatbot');
+            });
+        }
     }
 }
 

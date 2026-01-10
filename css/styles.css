@@ -181,6 +181,11 @@ ul {
     transform: scale(1.05);
 }
 
+.logo-image {
+    height: 60px;
+    width: auto;
+}
+
 .logo i {
     font-size: 1.5em;
 }
